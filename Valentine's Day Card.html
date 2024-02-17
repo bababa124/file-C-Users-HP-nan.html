@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)file:///C:/Users/HP/nan.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fce4ec; /* เปลี่ยนเป็นสีชมพูเมื่อต้องการ */
+        }
+        .card {
+            width: 300px;
+            border: 2px solid #e91e63;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 50px auto;
+            background-color: #fff;
+            text-align: center;
+            position: relative; /* ใช้ในการเพิ่มสติ๊กเกอร์ */
+        }
+        .message {
+            font-size: 24px;
+            color: #e91e63;
+        }
+        .sender,
+        .recipient {
+            font-size: 18px;
+            color: #000;
+            margin-top: 20px;
+        }
+        .sticker {
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: auto;
+            z-index: 1;
+        }
+        .letter {
+            display: none;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #f8bbd0;
+            border-radius: 10px;
+            text-align: left;
+        }
+        .signature {
+            margin-top: 20px;
+            font-style: italic;
+            color: #555;
+        }
+        .open-button {
+            background-color: #e91e63;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img class="sticker" src="./Valentine&#39;s Day Card_files/❤️" alt="Heart Sticker"> <!-- เพิ่มสติ๊กเกอร์รูปหัวใจ -->
+        <div class="message">กรุณากดเปิดอ่านด้วย ❤️</div>
+        <div class="sender">จาก: [ฮาร์ท]</div>
+        <div class="recipient">ถึง: [แนน]</div>
+        <button class="open-button" onclick="openLetter()">เปิดจดหมาย</button>
+        <div class="letter" id="letter" style="display: block;">
+            <p></p>
+            <p>สุขสันต์วันวาเลนไทน์นะเบบี๋ อีกอย่างวันนี้ก็วันครบรอบ7เดือนแล้วด้วย</p>
+            <p>เค้าไม่มีอะไรจะให้เธอในตอนนี้ แต่เธอได้รับของขวัญอย่างแน่นอน</p>
+            <p>ถึงเค้าไม่มีอะไรจะให้ แต่เค้าก็อยากจะบอกว่าเค้ารักเธอมากๆเลยนะคั้บ</p>
+            <p class="signature">จาก, [ฮาร์ท]</p>
+        </div>
+    </div>
+
+    <script>
+        function openLetter() {
+            var letter = document.getElementById("letter");
+            letter.style.display = "block";
+        }
+    </script>
+
+
+</body></html>
